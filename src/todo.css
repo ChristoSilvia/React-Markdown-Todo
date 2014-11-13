@@ -16,6 +16,16 @@ h3 {
     border-radius: 5px;
 }
 
+.preview {
+    border-top: 2px solid #888;
+}
+
+.preview #title {
+    color:#888;
+    margin-left:20px;
+    font-size:10pt;
+}
+
 button {
     background-color: #3333CC;
     color: #FFF;

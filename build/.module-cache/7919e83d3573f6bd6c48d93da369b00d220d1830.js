@@ -41,7 +41,7 @@ var TodoApp = React.createClass({displayName: 'TodoApp',
           className: "inputForm", 
           onSubmit: this.handleSubmit}, 
 	  React.createElement("div", {className: "preview"}, 
-	    React.createElement("p", {id: "title"}, "Preview:"), 
+	    React.createElement("p", {id: "title"}, "Preview"), 
             React.createElement("div", {
               className: "content", 
               dangerouslySetInnerHTML: {

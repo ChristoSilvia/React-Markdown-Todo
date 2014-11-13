@@ -40,11 +40,14 @@ var TodoApp = React.createClass({
         <form 
           className="inputForm"
           onSubmit={this.handleSubmit}>
-          <div 
-            className="content"
-            dangerouslySetInnerHTML={{
-              __html: converter.makeHtml(this.state.text)
-            }} />
+	  <div className="preview">
+	    <p id="title">Preview:</p>
+            <div 
+              className="content"
+              dangerouslySetInnerHTML={{
+                __html: converter.makeHtml(this.state.text)
+              }} />
+	  </div>
           <input onChange={this.onChange} 
             value={this.state.text} />
           <button>{'Add #' + (this.state.items.length + 1)}</button><br />
